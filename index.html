@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El principito </title>
+  <meta name="description" content="Producción, edición y optimización de video de los capítulos 1 y 2 de El principito.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="portada">
+    <div class="portada-texto">
+      <p class="etiqueta">Optimización de medios digitales para la web: audio y video</p>
+      <h1>El principito</h1>
+      <p class="subtitulo">Del video original a sus versiones optimizadas para la web</p>
+      <nav aria-label="Secciones del sitio">
+        <ul>
+          <li><a href="#historia">La historia</a></li>
+          <li><a href="#original">Video original</a></li>
+          <li><a href="#editado">Video editado</a></li>
+          <li><a href="#audio">Audio</a></li>
+          <li><a href="#renders">Renders</a></li>
+          <li><a href="#conclusiones">Conclusiones</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="historia" class="seccion">
+      <h2>Sobre la obra</h2>
+      <div class="dos-columnas">
+        <div>
+          <p><strong>El principito</strong> (<em>Le Petit Prince</em>) es una novela corta del escritor y aviador francés <strong>Antoine de Saint-Exupéry</strong>, publicada en 1943. Aunque parece un cuento infantil, habla de temas profundos: la amistad, la pérdida de la imaginación al crecer y la forma en que los adultos se fijan en lo superficial y olvidan lo esencial.</p>
+          <p>Es uno de los libros más traducidos del mundo, y el propio autor hizo las acuarelas que lo ilustran. Las imágenes de este proyecto se inspiran en ese estilo de acuarela.</p>
+        </div>
+        <figure>
+          <img src="media/img/escena_600_rec.jpg" alt="El aviador, pensativo, dibuja en el desierto junto a una lámpara y una caja con agujeros" loading="lazy">
+          <figcaption>El aviador intenta dibujar lo que le pide el principito.</figcaption>
+        </figure>
+      </div>
+
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <h3>Capítulo 1</h3>
+          <p>A los seis años, el narrador dibuja una serpiente boa que se ha tragado un elefante. Los adultos solo ven un sombrero y le aconsejan dejar el dibujo y estudiar cosas "serias". Él se hace piloto, pero sigue pensando que las personas mayores nunca entienden nada por sí solas.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Capítulo 2</h3>
+          <p>Ya adulto, el aviador sufre una avería y queda solo en el desierto del Sahara, con agua para pocos días. Al amanecer, un niño misterioso le pide que le dibuje un cordero. Después de varios intentos fallidos, el piloto dibuja una caja con agujeros y le dice que el cordero está adentro. El principito queda encantado.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="original" class="seccion">
+      <h2>Video original</h2>
+      <p class="intro">Esta es la primera versión del proyecto: las ilustraciones combinadas con la narración grabada previamente, sin edición de sonido ni imagen.</p>
+      <div class="video-principal">
+        <video controls preload="metadata" poster="media/img/poster_original.jpg" width="1280" height="720">
+          <source src="media/video/principito_original.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video de HTML5.
+        </video>
+      </div>
+      <ul class="ficha">
+        <li><span>Formato</span> MP4 · H.264</li>
+        <li><span>Resolución</span> 1920 × 1080</li>
+        <li><span>Duración</span> 10:22</li>
+        <li><span>Peso</span> 106 MB</li>
+      </ul>
+    </section>
+
+    <section id="editado" class="seccion">
+      <h2>Video editado</h2>
+      <p class="intro">En esta versión se separó la voz de la música de fondo para tratarlas por separado. La narración se limpió y se ecualizó para que se entienda mejor, y la música baja automáticamente cada vez que hay voz. La imagen ya tenía buena iluminación; solo se le dio un enfoque ligero.</p>
+      <div class="video-principal">
+        <video controls preload="metadata" poster="media/img/escena_15.jpg" width="1280" height="720">
+          <source src="media/video/principito_editado.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video de HTML5.
+        </video>
+      </div>
+      <ul class="ficha">
+        <li><span>Formato</span> MP4 · H.264</li>
+        <li><span>Resolución</span> 1920 × 1080</li>
+        <li><span>Audio</span> AAC 192 kbps · −16 LUFS</li>
+        <li><span>Peso</span> 52 MB</li>
+      </ul>
+    </section>
+
+    <section id="audio" class="seccion">
+      <h2>Comparación de audio</h2>
+      <p class="intro">Escucha la narración antes y después de la edición. Se nota sobre todo en la claridad de la voz y en el volumen de la música de fondo.</p>
+      <div class="tarjetas">
+        <article class="tarjeta audio">
+          <h3>Narración original</h3>
+          <p>Voz y música mezcladas tal como se grabaron.</p>
+          <audio controls preload="metadata">
+            <source src="media/audio/narracion_original.mp3" type="audio/mpeg">
+            Tu navegador no soporta la etiqueta de audio de HTML5.
+          </audio>
+        </article>
+        <article class="tarjeta audio">
+          <h3>Narración mejorada</h3>
+          <p>Voz limpia y ecualizada; la música baja automáticamente cuando hay narración.</p>
+          <audio controls preload="metadata">
+            <source src="media/audio/narracion_mejorada.mp3" type="audio/mpeg">
+            Tu navegador no soporta la etiqueta de audio de HTML5.
+          </audio>
+        </article>
+      </div>
+    </section>
+
+    <section id="renders" class="seccion">
+      <h2>Renders: formato, resolución y bitrate</h2>
+      <p class="intro">A partir del video editado se hicieron tres renders, bajando la resolución y el bitrate y cambiando el formato en cada uno. Ninguno supera la resolución original, porque escalar hacia arriba no agrega detalle.</p>
+
+      <div class="renders">
+        <article class="render">
+          <video controls preload="metadata" poster="media/img/escena_180.jpg" width="1280" height="720">
+            <source src="media/video/render1_720p_h264.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video de HTML5.
+          </video>
+          <h3>Render 1 · 720p</h3>
+          <ul class="ficha">
+            <li><span>Formato</span> MP4 · H.264</li>
+            <li><span>Resolución</span> 1280 × 720</li>
+            <li><span>Bitrate</span> 354 kbps</li>
+            <li><span>Peso</span> 38.4 MB</li>
+          </ul>
+        </article>
+
+        <article class="render">
+          <video controls preload="metadata" poster="media/img/escena_420.jpg" width="854" height="480">
+            <source src="media/video/render2_480p_vp9.webm" type="video/webm">
+            Tu navegador no soporta la etiqueta de video de HTML5.
+          </video>
+          <h3>Render 2 · 480p</h3>
+          <ul class="ficha">
+            <li><span>Formato</span> WebM · VP9</li>
+            <li><span>Resolución</span> 854 × 480</li>
+            <li><span>Bitrate</span> 356 kbps</li>
+            <li><span>Peso</span> 35.6 MB</li>
+          </ul>
+        </article>
+
+        <article class="render">
+          <video controls preload="metadata" poster="media/img/escena_540.jpg" width="640" height="360">
+            <source src="media/video/render3_360p_vista_previa.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video de HTML5.
+          </video>
+          <h3>Render 3 · 360p</h3>
+          <ul class="ficha">
+            <li><span>Formato</span> AVI · Xvid</li>
+            <li><span>Resolución</span> 640 × 360</li>
+            <li><span>Bitrate</span> 126 kbps</li>
+            <li><span>Peso</span> 15.9 MB</li>
+          </ul>
+          <p class="nota">Los navegadores no reproducen archivos AVI con Xvid. Aquí se muestra una copia en MP4 hecha a partir del AVI, que conserva su calidad. <a href="media/video/render3_360p_xvid.avi" download>Descargar el AVI original</a>.</p>
+        </article>
+      </div>
+
+      <div class="tabla-contenedor">
+        <table>
+          <caption>Resultados medidos contra el video editado</caption>
+          <thead>
+            <tr>
+              <th scope="col">Resultado</th>
+              <th scope="col">Render 1</th>
+              <th scope="col">Render 2</th>
+              <th scope="col">Render 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Peso vs. video editado</th><td>72 %</td><td>66 %</td><td>30 %</td></tr>
+            <tr><th scope="row">Bitrate de video pedido → real</th><td>400 → 354 kbps</td><td>200 → 356 kbps</td><td>150 → 126 kbps</td></tr>
+            <tr><th scope="row">Audio</th><td>AAC 128 kbps</td><td>Opus 96 kbps</td><td>MP3 64 kbps</td></tr>
+            <tr><th scope="row">PSNR promedio</th><td>36.7 dB</td><td>32.0 dB</td><td>29.0 dB</td></tr>
+            <tr><th scope="row">SSIM (1 = idéntico)</th><td>0.979</td><td>0.965</td><td>0.933</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="conclusiones" class="seccion">
+      <h2>Conclusiones</h2>
+      <div class="tarjetas tres">
+        <article class="tarjeta">
+          <h3>Resolución</h3>
+          <p>Fue lo que más afectó la nitidez. Los renders 1 y 2 tienen casi el mismo bitrate, pero el de 720p se ve claramente más definido.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Bitrate</h3>
+          <p>Define casi directamente el peso del archivo. Es solo un objetivo: VP9 entregó 356 kbps cuando se le pidieron 200.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Formato y códec</h3>
+          <p>El contenedor define la compatibilidad y el códec la eficiencia. MP4 con H.264 fue el mejor equilibrio para la web.</p>
+        </article>
+      </div>
+      <p class="intro">Para publicar en la web, la mejor opción es <strong>MP4 con H.264</strong>: es compatible con todos los navegadores y, a 720p, ahorra cerca del 28 % del peso sin una pérdida visible de calidad.</p>
+    </section>
+
+    <section id="referencias" class="seccion referencias">
+      <h2>Referencias</h2>
+      <ul>
+        <li>Armstrong, T. (2026, 10 de noviembre). <em>YouTube video formats: Best upload settings for 2026</em>. Soundstripe. <a href="https://www.soundstripe.com/blogs/youtube-video-formats" target="_blank" rel="noopener">https://www.soundstripe.com/blogs/youtube-video-formats</a></li>
+        <li>Dinh, H. (2026, 19 de mayo). <em>Best video format for YouTube in 2026 (codec, container, bitrate)</em>. Compresto. <a href="https://compresto.app/blog/best-video-format-for-youtube" target="_blank" rel="noopener">https://compresto.app/blog/best-video-format-for-youtube</a></li>
+        <li>Google. (s.f.). <em>YouTube recommended upload encoding settings</em>. Ayuda de YouTube. Recuperado el 17 de noviembre de 2026, de <a href="https://support.google.com/youtube/answer/1722171" target="_blank" rel="noopener">https://support.google.com/youtube/answer/1722171</a></li>
+        <li>Kochar, A. (2025, 7 de febrero). <em>Best video format for YouTube: MP4, H.264 &amp; bitrate</em>. Magic Hour. <a href="https://magichour.ai/blog/best-video-formats-for-youtube" target="_blank" rel="noopener">https://magichour.ai/blog/best-video-formats-for-youtube</a></li>
+        <li>Saint-Exupéry, A. de (1943). <em>Le Petit Prince</em>. Reynal &amp; Hitchcock.</li>
+        <li>Shortcut. (2026). <em>Shotcut</em> project management. [Software]. <a href="https://www.shortcut.com/" target="_blank" rel="noopener">https://www.shotcut.org/stockmedia/Shotcut%20User%20Guide.pdf</a></li>
+        <li>Shortcut. (2026, noviembre). <em>Shotcut user guide </em> <a href="https://www.shotcut.org/stockmedia/Shotcut%20User%20Guide.pdf" target="_blank" rel="noopener">https://www.shotcut.org/stockmedia/Shotcut%20User%20Guide.pdf</a></li>
+        <li>Shortcut. (s.f.). <em>Tutorial videos.</em> <a href="https://www.shotcut.org/tutorials/" target="_blank" rel="noopener">https://www.shotcut.org/tutorials/</a></li>
+        <li>Wang, Z., Bovik, A. C., Sheikh, H. R., &amp; Simoncelli, E. P. (2004). Image quality assessment: From error visibility to structural similarity. <em>IEEE Transactions on Image Processing, 13</em>(4), 600–612. <a href="https://doi.org/10.1109/TIP.2003.819861" target="_blank" rel="noopener">https://doi.org/10.1109/TIP.2003.819861</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><strong>Universidad de Guadalajara</strong></p>
+    <p><strong>UDG Virtual</strong></p>
+    <p><strong>Producto integrador:</strong> Incorporación de recursos multimedia optimizados para la Web (audio y video)</p>
+    <p><strong>Materia:</strong>Optimización de medios digitales para la web · Audio y video</p>
+    <p><strong>Asesora:</strong>Nancy Ruiz Monroy</p>
+    <p><strong>Alumna:</strong>Adriana Lizbeth Gudino Garibaldi</p>
+  </footer>
+
+</body>
+</html>
